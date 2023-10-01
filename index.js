@@ -28,4 +28,6 @@ const newEmployee = nondestructivelyUpdateObject(
 
       const newNewEmployee = destructivelyUpdateObject(employee, "streetAddress", "streetY");
 
+       delete newNewEmployee.name; 
+
    
