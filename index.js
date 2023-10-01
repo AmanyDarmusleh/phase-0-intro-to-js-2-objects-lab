@@ -12,12 +12,20 @@ function nondestructivelyUpdateObject(obj, key, value) {
   
     return newObj;
   }
-  
+
+
 const newEmployee = nondestructivelyUpdateObject(
-    employee,
+   employee,
     "name",
     "mona",
     )
+    
+    function destructivelyUpdateObject(obj, key, value) {
+        obj[key] = value; 
+      
+        return obj;
+      }
 
+      const newNewEmployee = destructivelyUpdateObject(employee, "streetAddress", "streetY");
 
-
+   
