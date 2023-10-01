@@ -4,7 +4,20 @@ const employee={
     streetAddress:"xstreet",
 };
 
- function updateEmployeeWithKeyAndValue(obj,key,value){
-     const newEmployee={...employee};
- };
+
+function nondestructivelyUpdateObject(obj, key, value) {
+    const newObj = { ...obj };
+  
+    newObj[key] = value;
+  
+    return newObj;
+  }
+  
+const newEmployee = nondestructivelyUpdateObject(
+    employee,
+    "name",
+    "mona",
+    )
+
+
 
